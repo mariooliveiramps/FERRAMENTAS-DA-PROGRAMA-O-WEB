@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', sans-serif;
+}
+/*Geral*/
+body{
+    background-color: #3B494B;
+    margin: 0 auto;
+}
+h2{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+.col{
+    float: left;
+    padding: 0 0 0 50px;
+    position: relative;
+}
+.dois{
+    width: 40%;
+}
+.tres{
+    text-align: center;
+    width: 29%;
+    padding: 0 1%;
+}
+.quatro{
+    width: 15%;
+    padding: 0 0 0 6%;
+}
+
+/*Menu Desktop*/
+header{
+    background-image:  -webkit-linear-gradient( -45deg, #0C191B 0%, #2B393B 30%, #0C191B 100%);
+    box-shadow: 0 3px 10px #3B494B;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    z-index: 30;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 5rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav-list .nav-item{
+    padding: 15px;
+}
+.nav-list .nav-item:hover{
+    background-color: #3B494B;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+}
+.mobile-icon{
+    display: none;
+}
+.mobile{
+    display: none;
+}
+/*section{
+    height: 44.3vw; 
+}*/
+/*Seção Sobre mim*/
+.grid{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.grid h2{
+    text-align: center;
+}
+p{
+    color: white;
+    padding-top: 30%;
+    text-align: justify;
+}
+img{
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+/*Seção Formação*/
+hr{
+    width: 730px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+section#formacao p{
+    padding-top: 30px;
+}
+hr{
+    margin-bottom: 50px;
+}
+/*Seção Portfolio*/
+section#portfolio p{
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+h3{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+/*Seção Contato*/
+Section#contato{
+   padding-top: 80px 4%;
+    
+}
+.grid a{
+    color: white;
+    text-decoration: none;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+form h2{
+    margin-bottom: 60px;
+}
+form input, form textarea{
+    background-color: #9fb8c7;
+    border: 0;
+    outline: 0;
+    padding: 20px 10px;
+    border-radius: 15px;
+    
+}
+form textarea{
+    resize: none;
+    height: 100px;
+}
+form input::placeholder, form textarea::placeholder{
+    color: black;
+    
+}
+form input[type=submit]:hover{
+    background-color: #95ced8;
+}
+
+
+
+@media all and (max-width: 870px) {
+
+    /*Menu Mobile*/
+    .nav-bar{
+        padding: 0.2rem 2.5rem;
+    }
+    .nav-item{
+        display: none;
+    }
+    .mobile-icon{
+        display: block;
+    }
+    .mobile-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile ul li{
+        margin: 0;
+    }
+    .mobile ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+    .mobile .nav-item:hover{
+        background-color: #586F7C;
+    }
+    .open{
+        display: block;
+    }
+
+}

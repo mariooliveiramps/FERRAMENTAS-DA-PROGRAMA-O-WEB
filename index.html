@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!--Link para o CSS-->
+    <link rel="stylesheet" href="./assets/css/estilo.css">
+    <title>Mário Oliveira</title>
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header>
+        <!--Menu de Navegação-->
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="./index.html"><h1>Mário Oliveira</h1></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#sobremim" class="nav-link">Sobre mim</a></li>
+                    <li class="nav-item"><a href="#formacao" class="nav-link">Formação Academica</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+            <!--Img para o menu mobile-->
+            <div class="mobile-icon">
+                <button onclick="menuShow()"><img src="./assets/img/open_menu.svg" alt="" class="icon"></button>
+            </div>
+        </nav>
+        <!--Menu de Navegação Mobile-->
+        <div class="mobile">
+            <ul>
+                <li class="nav-item"><a href="#sobremim" class="nav-link">Sobre mim</a></li>
+                <li class="nav-item"><a href="#formacao" class="nav-link">Formação Academica</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--Seção Sobre mim-->
+    <section id="sobremim">
+        <h2>Sobre mim</h2>
+        <div class="grid">
+            <div class="col dois">
+                <p>Oi, eu sou Mario, tenho 22, estou entrando no mundo da programação. Sempre tive grande interesse na área de tecnologias. Nasci e cresci em Estância - SE e, no meu tempo livre eu gosto de compor musicas, assistir filmes e também estudo um pouco sobre linguagens de programação.</p>     
+            </div>
+            <div class="col tres">
+                <img src="./assets/img/foto.png" alt="Minha Foto">
+            </div>
+        </div>
+    </section>
+    <!--Seção Formação-->
+    <section id="formacao">
+        <h2>Formação academica</h2>
+        <div class="grid">
+            <p>Atualmente cursando o 4° periodo do tecnologo em Análise e Desenvolvimento de Sistemas.</p>
+        </div>
+        <hr>
+    </section>
+    <!--Seção Portfolio-->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="grid">
+            <div class="col dois">
+                <h3>Projeto CIVA</h3>
+                <p>O projeto CIVA é um projeto de uma Carteira Internacional de Vacinação, feito duranto o curso de fullstack na ForsoftAcademy em 2022.</p>
+                <a href="https://github.com/mariooliveiramps/forsoft-civa" target="_blank">Acessar</a>
+            </div>
+            <div class="col dois">
+                <h3>Meu primeiro site</h3>
+                <p>Esse projeto foi feito, durante o curso "Meu Primeiro Site", na Junior Achievement Paraná em 2019.</p>
+                <a href="https://github.com/mariooliveiramps/meu-primeiro-site" target="_blank">Acessar</a>
+            </div>
+        </div>
+    </section>
+    <!--Seção Contato-->
+    <section id="contato">
+        <form action="">
+            <h2>Contato</h2>
+            <input id="nome" type="text" placeholder="Digite seu nome" required>
+            <input id="email" type="email" placeholder="exemplo@gmail.com" required>
+            <textarea name="" id="" placeholder="Digite sua mensagem" required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <!--Link do JS (funcionalidade menu)-->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
